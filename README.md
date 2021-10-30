@@ -2,4 +2,5 @@
 Taking Prism SDK V1.2 for a run
 
 - The dependencies are not being located even while trying to fetch and build with maven
-![image](https://user-images.githubusercontent.com/13464651/139558730-ad839c92-84c9-4e2e-9458-6d50b36c8c71.png)
+![image](https://user-images.githubusercontent.com/13464651/139558803-af435aaf-7fd3-44f7-93d2-fc06fb995e41.png)
+

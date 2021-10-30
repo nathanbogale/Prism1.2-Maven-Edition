@@ -26,6 +26,8 @@ repositories {
         }
     }
 }
+apply(plugin= "maven")
+
 configurations { create("externalLibs") }
 
 dependencies {
@@ -38,14 +40,14 @@ dependencies {
     implementation(files("src/lib/prism-crypto-jvm-1.2.0.jar"))
     implementation(files("src/lib/prism-identity-jvm-1.2.0.jar"))
 
-
-    testImplementation(kotlin("compile"))
+/*
+    implementation(kotlin("compile"))
     "externalLibs"(files("src/lib/prism-api-jvm-1.2.0.jar"))
     "externalLibs"(files("src/lib/prism-common-jvm-1.2.0.jar"))
     "externalLibs"(files("src/lib/prism-credentials-jvm-1.2.0.jar"))
     "externalLibs"(files("src/lib/prism-crypto-jvm-1.2.0.jar"))
     "externalLibs"(files("src/lib/prism-identity-jvm-1.2.0.jar"))
-
+*/
     //implementation("io.iohk.atala:prism-api:$prismVersion")
     implementation("org.jetbrains.kotlinx:kotlinx-datetime:0.2.1")
 /*

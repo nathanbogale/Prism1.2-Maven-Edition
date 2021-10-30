@@ -1,0 +1,5 @@
+--verbose
+--reporter=plain
+--color
+--reporter=plain,output=C:\Users\Nathan\prism-kotlin-drive\build\reports\ktlint\ktlintMainSourceSetCheck\ktlintMainSourceSetCheck.txt
+"src\\main\\kotlin\\io\\iohk\\atala\\prism\\example\\Main.kt"

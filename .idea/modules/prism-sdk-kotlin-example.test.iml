@@ -17,5 +17,4 @@
       </configuration>
     </facet>
   </component>
-  <component name="TestModuleProperties" production-module="prism-sdk-kotlin-example.main" />
 </module>

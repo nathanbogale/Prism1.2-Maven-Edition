@@ -35,8 +35,26 @@ object LittlePrism {
 
 
 //DID Creation
+        val masterKeyPair = EC.generateKeyPair()
+        val did = DID.createUnpublishedDID(masterKeyPair.publicKey)
 
-
+        val credentialContent = CredentialContent(
+            JsonObject(
+                mapOf(
+                    Pair("issuerDid", JsonPrimitive(did.value)),
+                    Pair("issuanceKeyId", JsonPrimitive("Issuance-0")),
+                    Pair("credentialSubject", JsonObject(
+                        mapOf(
+                            Pair("name", JsonPrimitive("José López Portillo")),
+                            Pair("certificate", JsonPrimitive("Certificate of PRISM SDK tutorial completion"))
+                        )
+                    )),
+                )
+            )
+        )
+        val credential = JsonBasedCredential(credentialContent)
+        val signedCredential = credential.sign(masterKeyPair.privateKey)
+        val (merkleRoot, merkleProofs) = CredentialBatches.batch(listOf(signedCredential))
     }
 
 }

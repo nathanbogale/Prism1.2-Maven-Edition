@@ -9,10 +9,5 @@
         <module name="prism-sdk-kotlin-example" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="prism-sdk-kotlin-example" target="1.5" />
-      <module name="prism-sdk-kotlin-example.main" target="11" />
-      <module name="prism-sdk-kotlin-example.test" target="11" />
-    </bytecodeTargetLevel>
   </component>
 </project>

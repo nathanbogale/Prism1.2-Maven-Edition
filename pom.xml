@@ -43,6 +43,11 @@
             <artifactId>prism-crypto-jvm</artifactId>
             <version>1.2.0</version>
         </dependency>
+        <dependency>
+            <groupId>io.iohk.atala</groupId>
+            <artifactId>prism-identity-jvm</artifactId>
+            <version>1.2.0</version>
+        </dependency>
     </dependencies>
 
 </project>

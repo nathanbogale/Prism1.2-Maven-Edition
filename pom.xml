@@ -48,6 +48,12 @@
             <artifactId>prism-identity-jvm</artifactId>
             <version>1.2.0</version>
         </dependency>
+        <dependency>
+            <groupId>io.iohk</groupId>
+            <artifactId>protoc-gen-pbandk-jvm</artifactId>
+            <version>0.20.5</version>
+            <type>pom</type>
+        </dependency>
     </dependencies>
 
 </project>

@@ -12,7 +12,5 @@ import kotlinx.serialization.json.JsonObject
 import kotlinx.serialization.json.JsonPrimitive
 
 fun main() {
-   /* NodeFlowExample.run()
-    CompleteFlowTutorial.run()*/
     LittlePrism.run()
 }

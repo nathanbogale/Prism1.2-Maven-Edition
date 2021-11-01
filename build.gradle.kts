@@ -4,6 +4,7 @@ plugins {
     kotlin("jvm") version "1.5.30"
     application
     id("org.jlleitschuh.gradle.ktlint") version "9.4.1"
+    id("maven-publish")
 }
 
 val versionDetails: groovy.lang.Closure<org.gradle.tooling.internal.consumer.versioning.VersionDetails> by extra
@@ -26,11 +27,13 @@ repositories {
         }
     }
 }
-apply(plugin= "maven")
+apply(plugin = "maven")
 
 configurations { create("externalLibs") }
 
 dependencies {
+
+    implementation("io.iohk:protoc-gen-pbandk-jvm:0.20.5")
 
     implementation(fileTree(mapOf("dir" to "lib", "include" to listOf("*.jar"))))
 

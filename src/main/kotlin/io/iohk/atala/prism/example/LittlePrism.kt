@@ -35,6 +35,7 @@ object LittlePrism {
 
 
 //DID Creation
+        /*
         val masterKeyPair = EC.generateKeyPair()
         val did = DID.createUnpublishedDID(masterKeyPair.publicKey)
 
@@ -55,6 +56,10 @@ object LittlePrism {
         val credential = JsonBasedCredential(credentialContent)
         val signedCredential = credential.sign(masterKeyPair.privateKey)
         val (merkleRoot, merkleProofs) = CredentialBatches.batch(listOf(signedCredential))
+
+
+
+         */
     }
 
 }

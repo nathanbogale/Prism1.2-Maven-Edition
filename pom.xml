@@ -4,6 +4,7 @@
     <groupId>io.iohk.atala.prism.example</groupId>
     <artifactId>prism-sdk-kotlin-example</artifactId>
     <version>1.0-SNAPSHOT</version>
+
     <dependencies>
         <dependency>
             <groupId>org.jetbrains.kotlinx</groupId>
@@ -49,10 +50,9 @@
             <version>1.2.0</version>
         </dependency>
         <dependency>
-            <groupId>io.iohk</groupId>
-            <artifactId>protoc-gen-pbandk-jvm</artifactId>
-            <version>0.20.5</version>
-            <type>pom</type>
+            <groupId>io.iohk.atala</groupId>
+            <artifactId>prism-protos-jvm</artifactId>
+            <version>1.2.0</version>
         </dependency>
     </dependencies>
 

@@ -1,6 +1,6 @@
 --verbose
 --reporter=plain
 --color
---reporter=plain,output=C:\Users\Nathan\prism-kotlin-drive\build\reports\ktlint\ktlintKotlinScriptCheck\ktlintKotlinScriptCheck.txt
+--reporter=plain,output=C:\Users\Nathan\Prism1.2-Maven-Edition\build\reports\ktlint\ktlintKotlinScriptCheck\ktlintKotlinScriptCheck.txt
 "build.gradle.kts"
 "settings.gradle.kts"

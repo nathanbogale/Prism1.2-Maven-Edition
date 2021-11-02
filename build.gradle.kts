@@ -19,6 +19,7 @@ repositories {
     google()
     jcenter()
     maven("https://plugins.gradle.org/m2/")
+    maven("https://vlad107.jfrog.io/artifactory/default-maven-virtual/")
     maven {
         url = uri("https://maven.pkg.github.com/input-output-hk/better-parse")
         credentials {

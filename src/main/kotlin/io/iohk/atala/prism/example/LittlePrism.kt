@@ -5,6 +5,7 @@ import io.iohk.atala.prism.api.*
 import io.iohk.atala.prism.common.PrismSdkInternal
 import io.iohk.atala.prism.crypto.*
 import io.iohk.atala.prism.identity.*
+//import io.iohk.atala.prism.identity.DID
 import io.iohk.atala.prism.credentials.*
 import io.iohk.atala.prism.credentials.content.*
 import io.iohk.atala.prism.credentials.json.*
@@ -33,13 +34,16 @@ object LittlePrism {
         println("""Hello im Little Prism""")
         println("""-This is where we start-""")
 
+
 //DID Creation
-        val masterKeyPair = EC.generateKeyPair()
+
+/*
+    val masterKeyPair = EC.generateKeyPair()
         //val did = DID.createUnpublishedDID(masterKeyPair.publicKey)
         val did = PrismDid.buildCanonicalFromMasterPublicKey(masterKeyPair.publicKey)
         println("""THIS IS THE DID GENERATED: $did""" )
 
-/*
+
         val credentialContent = CredentialContent(
             JsonObject(
                 mapOf(

@@ -1,0 +1,31 @@
+[90mC:\Users\Nathan\Prism1.2-Maven-Edition\src\main\kotlin\io\iohk\atala\prism\example\[0mLittlePrism.kt[90m:[0m1[90m:1:[0m File must end with a newline (\n)[90m (final-newline)[0m
+[90mC:\Users\Nathan\Prism1.2-Maven-Edition\src\main\kotlin\io\iohk\atala\prism\example\[0mLittlePrism.kt[90m:[0m3[90m:1:[0m Imports must be ordered in lexicographic order without any empty lines in-between with "java", "javax", "kotlin" and aliases in the end -- no autocorrection due to comments in the import list (cannot be auto-corrected)[90m (import-ordering)[0m
+[90mC:\Users\Nathan\Prism1.2-Maven-Edition\src\main\kotlin\io\iohk\atala\prism\example\[0mLittlePrism.kt[90m:[0m4[90m:1:[0m Wildcard import (cannot be auto-corrected)[90m (no-wildcard-imports)[0m
+[90mC:\Users\Nathan\Prism1.2-Maven-Edition\src\main\kotlin\io\iohk\atala\prism\example\[0mLittlePrism.kt[90m:[0m5[90m:1:[0m Unused import[90m (no-unused-imports)[0m
+[90mC:\Users\Nathan\Prism1.2-Maven-Edition\src\main\kotlin\io\iohk\atala\prism\example\[0mLittlePrism.kt[90m:[0m6[90m:1:[0m Wildcard import (cannot be auto-corrected)[90m (no-wildcard-imports)[0m
+[90mC:\Users\Nathan\Prism1.2-Maven-Edition\src\main\kotlin\io\iohk\atala\prism\example\[0mLittlePrism.kt[90m:[0m7[90m:1:[0m Wildcard import (cannot be auto-corrected)[90m (no-wildcard-imports)[0m
+[90mC:\Users\Nathan\Prism1.2-Maven-Edition\src\main\kotlin\io\iohk\atala\prism\example\[0mLittlePrism.kt[90m:[0m8[90m:1:[0m Missing space after //[90m (comment-spacing)[0m
+[90mC:\Users\Nathan\Prism1.2-Maven-Edition\src\main\kotlin\io\iohk\atala\prism\example\[0mLittlePrism.kt[90m:[0m9[90m:1:[0m Wildcard import (cannot be auto-corrected)[90m (no-wildcard-imports)[0m
+[90mC:\Users\Nathan\Prism1.2-Maven-Edition\src\main\kotlin\io\iohk\atala\prism\example\[0mLittlePrism.kt[90m:[0m10[90m:1:[0m Wildcard import (cannot be auto-corrected)[90m (no-wildcard-imports)[0m
+[90mC:\Users\Nathan\Prism1.2-Maven-Edition\src\main\kotlin\io\iohk\atala\prism\example\[0mLittlePrism.kt[90m:[0m11[90m:1:[0m Wildcard import (cannot be auto-corrected)[90m (no-wildcard-imports)[0m
+[90mC:\Users\Nathan\Prism1.2-Maven-Edition\src\main\kotlin\io\iohk\atala\prism\example\[0mLittlePrism.kt[90m:[0m12[90m:1:[0m Wildcard import (cannot be auto-corrected)[90m (no-wildcard-imports)[0m
+[90mC:\Users\Nathan\Prism1.2-Maven-Edition\src\main\kotlin\io\iohk\atala\prism\example\[0mLittlePrism.kt[90m:[0m14[90m:1:[0m Needless blank line(s)[90m (no-consecutive-blank-lines)[0m
+[90mC:\Users\Nathan\Prism1.2-Maven-Edition\src\main\kotlin\io\iohk\atala\prism\example\[0mLittlePrism.kt[90m:[0m25[90m:1:[0m Unused import[90m (no-unused-imports)[0m
+[90mC:\Users\Nathan\Prism1.2-Maven-Edition\src\main\kotlin\io\iohk\atala\prism\example\[0mLittlePrism.kt[90m:[0m26[90m:1:[0m Unused import[90m (no-unused-imports)[0m
+[90mC:\Users\Nathan\Prism1.2-Maven-Edition\src\main\kotlin\io\iohk\atala\prism\example\[0mLittlePrism.kt[90m:[0m28[90m:1:[0m Needless blank line(s)[90m (no-consecutive-blank-lines)[0m
+[90mC:\Users\Nathan\Prism1.2-Maven-Edition\src\main\kotlin\io\iohk\atala\prism\example\[0mLittlePrism.kt[90m:[0m32[90m:1:[0m Needless blank line(s)[90m (no-consecutive-blank-lines)[0m
+[90mC:\Users\Nathan\Prism1.2-Maven-Edition\src\main\kotlin\io\iohk\atala\prism\example\[0mLittlePrism.kt[90m:[0m37[90m:1:[0m Needless blank line(s)[90m (no-consecutive-blank-lines)[0m
+[90mC:\Users\Nathan\Prism1.2-Maven-Edition\src\main\kotlin\io\iohk\atala\prism\example\[0mLittlePrism.kt[90m:[0m38[90m:1:[0m Missing space after //[90m (comment-spacing)[0m
+[90mC:\Users\Nathan\Prism1.2-Maven-Edition\src\main\kotlin\io\iohk\atala\prism\example\[0mLittlePrism.kt[90m:[0m68[90m:1:[0m Unexpected blank line(s) before "}"[90m (no-blank-line-before-rbrace)[0m
+[90mC:\Users\Nathan\Prism1.2-Maven-Edition\src\main\kotlin\io\iohk\atala\prism\example\[0mLittlePrism.kt[90m:[0m70[90m:1:[0m Unexpected blank line(s) before "}"[90m (no-blank-line-before-rbrace)[0m
+[90mC:\Users\Nathan\Prism1.2-Maven-Edition\src\main\kotlin\io\iohk\atala\prism\example\[0mMain.kt[90m:[0m3[90m:1:[0m Imports must be ordered in lexicographic order without any empty lines in-between with "java", "javax", "kotlin" and aliases in the end[90m (import-ordering)[0m
+[90mC:\Users\Nathan\Prism1.2-Maven-Edition\src\main\kotlin\io\iohk\atala\prism\example\[0mMain.kt[90m:[0m3[90m:1:[0m Unused import[90m (no-unused-imports)[0m
+[90mC:\Users\Nathan\Prism1.2-Maven-Edition\src\main\kotlin\io\iohk\atala\prism\example\[0mMain.kt[90m:[0m4[90m:1:[0m Wildcard import (cannot be auto-corrected)[90m (no-wildcard-imports)[0m
+[90mC:\Users\Nathan\Prism1.2-Maven-Edition\src\main\kotlin\io\iohk\atala\prism\example\[0mMain.kt[90m:[0m5[90m:1:[0m Wildcard import (cannot be auto-corrected)[90m (no-wildcard-imports)[0m
+[90mC:\Users\Nathan\Prism1.2-Maven-Edition\src\main\kotlin\io\iohk\atala\prism\example\[0mMain.kt[90m:[0m6[90m:1:[0m Wildcard import (cannot be auto-corrected)[90m (no-wildcard-imports)[0m
+[90mC:\Users\Nathan\Prism1.2-Maven-Edition\src\main\kotlin\io\iohk\atala\prism\example\[0mMain.kt[90m:[0m7[90m:1:[0m Wildcard import (cannot be auto-corrected)[90m (no-wildcard-imports)[0m
+[90mC:\Users\Nathan\Prism1.2-Maven-Edition\src\main\kotlin\io\iohk\atala\prism\example\[0mMain.kt[90m:[0m8[90m:1:[0m Wildcard import (cannot be auto-corrected)[90m (no-wildcard-imports)[0m
+[90mC:\Users\Nathan\Prism1.2-Maven-Edition\src\main\kotlin\io\iohk\atala\prism\example\[0mMain.kt[90m:[0m9[90m:1:[0m Wildcard import (cannot be auto-corrected)[90m (no-wildcard-imports)[0m
+[90mC:\Users\Nathan\Prism1.2-Maven-Edition\src\main\kotlin\io\iohk\atala\prism\example\[0mMain.kt[90m:[0m10[90m:1:[0m Wildcard import (cannot be auto-corrected)[90m (no-wildcard-imports)[0m
+[90mC:\Users\Nathan\Prism1.2-Maven-Edition\src\main\kotlin\io\iohk\atala\prism\example\[0mMain.kt[90m:[0m11[90m:1:[0m Unused import[90m (no-unused-imports)[0m
+[90mC:\Users\Nathan\Prism1.2-Maven-Edition\src\main\kotlin\io\iohk\atala\prism\example\[0mMain.kt[90m:[0m12[90m:1:[0m Unused import[90m (no-unused-imports)[0m

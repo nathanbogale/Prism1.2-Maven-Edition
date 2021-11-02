@@ -11,7 +11,8 @@ Previously tried here, https://github.com/nathanbogale/Prism1.2TestRun.git (a gr
 
 
 #### Changed the project to support Maven 
-- And added the dependecies to be fetched like below
+- And added the dependecies to be fetched to my project POM file like below
+
 ![image](https://user-images.githubusercontent.com/13464651/139877691-421da7a7-f032-44d3-a1e3-68e11932760a.png)
 
 

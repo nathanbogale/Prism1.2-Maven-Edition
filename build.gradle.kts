@@ -1,16 +1,17 @@
 import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
+
 plugins {
     kotlin("jvm") version "1.5.30"
     application
     id("org.jlleitschuh.gradle.ktlint") version "9.4.1"
-    id("maven-publish")
 }
 
 val versionDetails: groovy.lang.Closure<org.gradle.tooling.internal.consumer.versioning.VersionDetails> by extra
 val prismVersion = "1.2.0"
 
-group = "io.iohk.atala.prism.example"
+//group = "io.iohk.atala.prism.example"
+group = "io.iohk.atala"
 version = "1.0-SNAPSHOT"
 
 repositories {
@@ -28,23 +29,20 @@ repositories {
         }
     }
 }
-apply(plugin = "maven")
+apply(plugin= "maven")
 
 configurations { create("externalLibs") }
 
 dependencies {
 
-    implementation("io.iohk:protoc-gen-pbandk-jvm:0.20.5")
-
     implementation(fileTree(mapOf("dir" to "lib", "include" to listOf("*.jar"))))
-
+/*
     implementation(files("src/lib/prism-api-jvm-1.2.0.jar"))
     implementation(files("src/lib/prism-common-jvm-1.2.0.jar"))
     implementation(files("src/lib/prism-credentials-jvm-1.2.0.jar"))
     implementation(files("src/lib/prism-crypto-jvm-1.2.0.jar"))
     implementation(files("src/lib/prism-identity-jvm-1.2.0.jar"))
 
-/*
     implementation(kotlin("compile"))
     "externalLibs"(files("src/lib/prism-api-jvm-1.2.0.jar"))
     "externalLibs"(files("src/lib/prism-common-jvm-1.2.0.jar"))
@@ -54,18 +52,25 @@ dependencies {
 */
     //implementation("io.iohk.atala:prism-api:$prismVersion")
     implementation("org.jetbrains.kotlinx:kotlinx-datetime:0.2.1")
+
+    implementation("io.iohk.atala:prism-api-jvm:1.2.0")
+    implementation("io.iohk.atala:prism-credentials-jvm:1.2.0")
+    implementation("io.iohk.atala:prism-crypto-jvm:1.2.0")
+    implementation("io.iohk.atala:prism-identity-jvm:1.2.0")
+    implementation("io.iohk.atala:prism-protos-jvm:1.2.0")
+
 /*
     //fetching the dependencies online
     // needed for the credential payloads defined in protobuf as well as to interact with our backend services
-    implementation("io.iohk.atala.prism:protos:0.1.0-fd93d83a")
+    implementation("io.iohk.atala.prism:protos-jvm:1.2.0")
 // needed for cryptography primitives implementation
-    implementation("io.iohk.atala.prism:crypto:0.1.0-fd93d83a")
+    implementation("io.iohk.atala.prism:crypto:1.2.0")
 // needed to deal with DIDs
-    implementation("io.iohk.atala.prism:identities:0.1.0-fd93d83a")
+    implementation("io.iohk.atala.prism:identities:1.2.0")
 // needed to deal with credentials
-    implementation("io.iohk.atala.prism:credentials:0.1.0-fd93d83a")
+    implementation("io.iohk.atala.prism:credentials:1.2.0")
 // used to avoid some boilerplate
-    implementation("io.iohk.atala.prism:extras:0.1.0-fd93d83a")
+    implementation("io.iohk.atala.prism:extras:1.2.0")
 */
 // needed for the credential content, bring the latest version
     implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.2.2")

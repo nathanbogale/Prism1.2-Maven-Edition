@@ -35,8 +35,7 @@ Previously tried here, https://github.com/nathanbogale/Prism1.2TestRun.git (a gr
    - ~~They are available on Maven public(the Jar and related files) of versions up to 0.20.5, but i believe these are not the correct version Prism is looking for~~
 - ~~Code not recognizing DID function~~  
 
-- ### This is the most recent showstopper (which is highlighting a problem with the elliptic curve keypair generation line)
-![image](https://user-images.githubusercontent.com/13464651/139874948-8259a076-8633-4da1-9d4c-3b5d8268dce8.png)
+- ~~This is the most recent showstopper (which is highlighting a problem with the elliptic curve keypair generation line)~~
 
 
 

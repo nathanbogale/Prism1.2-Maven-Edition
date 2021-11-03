@@ -30,16 +30,14 @@ Previously tried here, https://github.com/nathanbogale/Prism1.2TestRun.git (a gr
 
 
 # Showstoppers
-- Ptotos and pbandk plugin not found with the specified path (iohk repo of maven or github) 
-   - I do not have the files them selvs to add localy, in order to add them (anybody that do please share)
-   - They are available on Maven public(the Jar and related files) of versions up to 0.20.5, but i believe these are not the correct version Prism is looking for
+- ~~Ptotos and pbandk plugin not found with the specified path (iohk repo of maven or github)~~
+   - ~~I do not have the files them selvs to add localy, in order to add them (anybody that do please share)~~
+   - ~~They are available on Maven public(the Jar and related files) of versions up to 0.20.5, but i believe these are not the correct version Prism is looking for~~
 
 
-- Code not recognizing DID  
- ![image](https://user-images.githubusercontent.com/13464651/139874478-dac9d857-7145-454f-b820-64799a78b8a1.png)
-  
+- ~~Code not recognizing DID~~  
 
-- after solving the DID issue above like below
+- ~~after solving the DID issue above like below~~
 
 
  ![image](https://user-images.githubusercontent.com/13464651/139874590-30316009-ad11-44b3-80a6-c2e876a76fff.png)

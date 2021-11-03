@@ -33,15 +33,7 @@ Previously tried here, https://github.com/nathanbogale/Prism1.2TestRun.git (a gr
 - ~~Ptotos and pbandk plugin not found with the specified path (iohk repo of maven or github)~~
    - ~~I do not have the files them selvs to add localy, in order to add them (anybody that do please share)~~
    - ~~They are available on Maven public(the Jar and related files) of versions up to 0.20.5, but i believe these are not the correct version Prism is looking for~~
-
-
-- ~~Code not recognizing DID~~  
-
-- ~~after solving the DID issue above like below~~
-
-
- ![image](https://user-images.githubusercontent.com/13464651/139874590-30316009-ad11-44b3-80a6-c2e876a76fff.png)
-
+- ~~Code not recognizing DID function~~  
 
 - ### This is the most recent showstopper (which is highlighting a problem with the elliptic curve keypair generation line)
 ![image](https://user-images.githubusercontent.com/13464651/139874948-8259a076-8633-4da1-9d4c-3b5d8268dce8.png)

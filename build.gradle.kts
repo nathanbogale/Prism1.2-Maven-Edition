@@ -58,6 +58,7 @@ dependencies {
     implementation("io.iohk.atala:prism-crypto-jvm:1.2.0")
     implementation("io.iohk.atala:prism-identity-jvm:1.2.0")
     implementation("io.iohk.atala:prism-protos-jvm:1.2.0")
+    implementation("org.bouncycastle:bcprov-jdk15on:1.68")
 
 /*
     //fetching the dependencies online

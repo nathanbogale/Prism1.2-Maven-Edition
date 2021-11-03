@@ -30,14 +30,13 @@ object LittlePrism {
         println("""Hello im Little Prism""")
         println("""-This is where we start-""")
 
-        val masterKeyPair = EC.generateKeyPair()
-        val did = DID.createUnpublishedDID(masterKeyPair.publicKey)
+
 /*
-// DID CREATION 1
+// DID CREATION OP 1
         val masterKeyPair = EC.generateKeyPair()
         val did = DID.createUnpublishedDID(masterKeyPair.publicKey)
 
-// DID CREATION 2
+// DID CREATION OP 2
         val mnemonic = KeyDerivation.randomMnemonicCode()
         val seed = KeyDerivation.binarySeed(mnemonic, "secret")
         // Create KeyPair out of mnemonic seed phrase, did index, type of key, key index

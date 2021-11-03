@@ -1,2 +1,6 @@
-[90mC:\Users\Nathan\Prism1.2-Maven-Edition\[0mbuild.gradle.kts[90m:[0m55[90m:5:[0m Missing space after //[90m (comment-spacing)[0m
-[90mC:\Users\Nathan\Prism1.2-Maven-Edition\[0mbuild.gradle.kts[90m:[0m74[90m:1:[0m Unexpected blank line(s) before "}"[90m (no-blank-line-before-rbrace)[0m
+[90mC:\Users\Nathan\Prism1.2-Maven-Edition\[0mbuild.gradle.kts[90m:[0m3[90m:1:[0m Needless blank line(s)[90m (no-consecutive-blank-lines)[0m
+[90mC:\Users\Nathan\Prism1.2-Maven-Edition\[0mbuild.gradle.kts[90m:[0m13[90m:1:[0m Missing space after //[90m (comment-spacing)[0m
+[90mC:\Users\Nathan\Prism1.2-Maven-Edition\[0mbuild.gradle.kts[90m:[0m31[90m:1:[0m Unexpected blank line(s) before "}"[90m (no-blank-line-before-rbrace)[0m
+[90mC:\Users\Nathan\Prism1.2-Maven-Edition\[0mbuild.gradle.kts[90m:[0m33[90m:13:[0m Missing spacing before "="[90m (op-spacing)[0m
+[90mC:\Users\Nathan\Prism1.2-Maven-Edition\[0mbuild.gradle.kts[90m:[0m54[90m:5:[0m Missing space after //[90m (comment-spacing)[0m
+[90mC:\Users\Nathan\Prism1.2-Maven-Edition\[0mbuild.gradle.kts[90m:[0m81[90m:1:[0m Unexpected blank line(s) before "}"[90m (no-blank-line-before-rbrace)[0m

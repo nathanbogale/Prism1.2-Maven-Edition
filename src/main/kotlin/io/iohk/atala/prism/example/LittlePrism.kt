@@ -1,21 +1,13 @@
 package io.iohk.atala.prism.example
 
+import io.iohk.atala.prism.api.CredentialBatches
 import io.iohk.atala.prism.credentials.*
 import io.iohk.atala.prism.credentials.content.CredentialContent
 import io.iohk.atala.prism.credentials.json.JsonBasedCredential
 import io.iohk.atala.prism.crypto.EC
 import io.iohk.atala.prism.crypto.MerkleInclusionProof
 import io.iohk.atala.prism.crypto.derivation.KeyDerivation
-import io.iohk.atala.prism.crypto.Hash
-import io.iohk.atala.prism.crypto.derivation.KeyType
-import io.iohk.atala.prism.extras.ProtoClientUtils
-import io.iohk.atala.prism.extras.ProtoUtils
-import io.iohk.atala.prism.extras.RequestUtils
-import io.iohk.atala.prism.identity.DID
-import io.iohk.atala.prism.identity.DID.Companion.issuingKeyId
-import io.iohk.atala.prism.identity.DID.Companion.masterKeyId
-import io.iohk.atala.prism.identity.KeyInformation
-import io.iohk.atala.prism.identity.util.ECProtoOps
+import io.iohk.atala.prism.identity.PrismDid
 import io.iohk.atala.prism.protos.*
 import kotlinx.coroutines.*
 import kotlinx.serialization.json.JsonObject
@@ -24,27 +16,39 @@ import pbandk.decodeFromByteArray
 import pbandk.encodeToByteArray
 
 
+
 object LittlePrism {
 
     fun run() {
-        println("""Hello im Little Prism""")
-        println("""-This is where we start-""")
+        println("""Generating DID""")
 
-
-/*
-// DID CREATION OP 1
         val masterKeyPair = EC.generateKeyPair()
-        val did = DID.createUnpublishedDID(masterKeyPair.publicKey)
+        val did = PrismDid.buildCanonicalFromMasterPublicKey(masterKeyPair.publicKey)
+        println("""- DID:. $did""")
 
-// DID CREATION OP 2
-        val mnemonic = KeyDerivation.randomMnemonicCode()
-        val seed = KeyDerivation.binarySeed(mnemonic, "secret")
-        // Create KeyPair out of mnemonic seed phrase, did index, type of key, key index
-        val issuerMasterKeyPair = DID.deriveKeyFromFullPath(seed, 0, KeyType.MASTER_KEY, 0)
-        val createDIDContext = DID.createDIDFromMnemonic(mnemonic, 0, "secret")
-        val issuerCreatedDIDSignedOperation = createDIDContext.createDIDSignedOperation
 
-*/
+        val credentialContent = CredentialContent(
+            JsonObject(
+                mapOf(
+                    Pair("issuerDid", JsonPrimitive(did.value)),
+                    Pair("issuanceKeyId", JsonPrimitive("Issuance-0")),
+                    Pair("credentialSubject", JsonObject(
+                        mapOf(
+                            Pair("name", JsonPrimitive("José López Portillo")),
+                            Pair("certificate", JsonPrimitive("Certificate of PRISM SDK tutorial completion"))
+                        )
+                    )),
+                )
+            )
+        )
+
+        val credential = JsonBasedCredential(credentialContent)
+        val signedCredential = credential.sign(masterKeyPair.privateKey)
+        val (merkleRoot, merkleProofs) = CredentialBatches.batch(listOf(signedCredential))
+        println("""- Credential:. $credential""")
+        println("""- SignedCredential:. $signedCredential""")
+
+
     }
 
 }

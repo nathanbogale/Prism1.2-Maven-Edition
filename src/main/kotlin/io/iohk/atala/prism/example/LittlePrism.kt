@@ -31,11 +31,11 @@ object LittlePrism {
             JsonObject(
                 mapOf(
                     Pair("issuerDid", JsonPrimitive(did.value)),
-                    Pair("issuanceKeyId", JsonPrimitive("Issuance-0")),
+                    Pair("issuanceKeyId", JsonPrimitive("IDIssuance-0.0")),
                     Pair("credentialSubject", JsonObject(
                         mapOf(
-                            Pair("name", JsonPrimitive("José López Portillo")),
-                            Pair("certificate", JsonPrimitive("Certificate of PRISM SDK tutorial completion"))
+                            Pair("name", JsonPrimitive("Debbol Mammo")),
+                            Pair("certificate", JsonPrimitive("Certificate of TOGAF certification completion"))
                         )
                     )),
                 )

@@ -24,8 +24,10 @@ repositories {
     maven {
         url = uri("https://maven.pkg.github.com/input-output-hk/atala-prism-sdk")
         credentials {
-            username = "NA"
-            password = "NA"
+           // username = "NA"
+           // password = "NA"
+            username = "nathanbogale"
+            password = "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"
         }
     }
 
@@ -44,7 +46,10 @@ dependencies {
     implementation("io.iohk.atala:prism-crypto-jvm:1.2.0")
     implementation("io.iohk.atala:prism-identity-jvm:1.2.0")
     implementation("io.iohk.atala:prism-protos-jvm:1.2.0")
+    //added to handle
     implementation("org.bouncycastle:bcprov-jdk15on:1.68")
+    // addin the GSON plugin to handle JSON data
+    implementation("com.google.code.gson:gson:2.8.5")
 
 // needed for the credential content, bring the latest version
     implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.2.2")

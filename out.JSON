@@ -1,0 +1,7 @@
+{
+  "Issue DID": "did:prism:abaf1427e3dd00558b1ca7f5cd76f0553e8942bcdc83ce30aa75c7769a72216d",
+  "credentialSubject": {
+    "Issued & Signed Credentials": "[JsonBasedCredential(content=CredentialContent(fields={\"issuerDid\":\"did:prism:abaf1427e3dd00558b1ca7f5cd76f0553e8942bcdc83ce30aa75c7769a72216d\",\"issuanceKeyId\":\"ID-1\",\"credentialSubject\":{\"name\":\"Debbol Mammo\",\"certificate\":\"Certificate of TOGAF certification completion\",\"issue-date\":\"NOV-20-2020\"}}), signature=io.iohk.atala.prism.crypto.signature.ECSignature@c5dc4a2), JsonBasedCredential(content=CredentialContent(fields={\"issuerDid\":\"did:prism:abaf1427e3dd00558b1ca7f5cd76f0553e8942bcdc83ce30aa75c7769a72216d\",\"issuanceKeyId\":\"ID-2\",\"credentialSubject\":{\"name\":\"Debbol Mammo\",\"certificate\":\"Certificate of PRISM certification completion\",\"issue-date\":\"NOV-20-2020\"}}), signature=io.iohk.atala.prism.crypto.signature.ECSignature@4a194c39)]",
+    "Merket Root Generated": "MerkleRoot(hash=Sha256Digest(value=[108, -68, -111, 126, 115, -115, -72, -32, 90, 21, -67, 33, -25, 30, -118, -101, 45, 77, 25, -68, -39, -41, -82, -68, -81, -45, -46, 69, -90, -5, -61, -8]))"
+  }
+}

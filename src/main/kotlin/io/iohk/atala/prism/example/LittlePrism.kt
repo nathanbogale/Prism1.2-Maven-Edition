@@ -1,5 +1,6 @@
 package io.iohk.atala.prism.example
 
+import com.google.gson.Gson
 import io.iohk.atala.prism.api.CredentialBatches
 import io.iohk.atala.prism.credentials.*
 import io.iohk.atala.prism.credentials.content.CredentialContent
@@ -14,7 +15,7 @@ import kotlinx.serialization.json.JsonObject
 import kotlinx.serialization.json.JsonPrimitive
 import pbandk.decodeFromByteArray
 import pbandk.encodeToByteArray
-
+import java.io.File
 
 
 object LittlePrism {
@@ -63,12 +64,31 @@ object LittlePrism {
         val firstCredential = JsonBasedCredential(firstCredentialContent)
         val secondCredential = JsonBasedCredential(secondCredentialContent)
         val signedCredential = listOf(firstCredential.sign(masterKeyPair.privateKey),secondCredential.sign(masterKeyPair.privateKey))
+       // val signedCredential = listOf(firstCredential.sign(masterKeyPair.privateKey),secondCredential.sign(masterKeyPair.privateKey))
        // val signedCredential = firstCredential.sign(masterKeyPair.privateKey);secondCredential.sign(masterKeyPair.privateKey)
         val (merkleRoot, merkleProofs) = CredentialBatches.batch(signedCredential)
        // println("""- Credential:. $credential""")
         println("""- SignedCredential:. $signedCredential""")
         println("""- Merkel Root+Proof:. $merkleRoot,$merkleProofs""")
 
+
+        val outputData = (
+            JsonObject(
+                mapOf(
+                    Pair("Issue DID", JsonPrimitive("$did")),
+                    Pair("credentialSubject", JsonObject(
+                        mapOf(
+                            Pair("Issued & Signed Credentials", JsonPrimitive("$signedCredential")),
+                            Pair("Merket Root Generated", JsonPrimitive("$merkleRoot")),
+                          )
+                    )),
+                )
+            )
+        )
+
+
+       // File("out.JSON").writeText("$outputData")
+        File("out.JSON").writeText("$outputData")
 
     }
 

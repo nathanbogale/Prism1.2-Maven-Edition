@@ -24,8 +24,8 @@ repositories {
     maven {
         url = uri("https://maven.pkg.github.com/input-output-hk/atala-prism-sdk")
         credentials {
-            username = "MyUsername"
-            password = "MyToken"
+            username = "NA"
+            password = "NA"
         }
     }
 

@@ -1,0 +1,12 @@
+{
+  "did:prism:29d0a4022e9b9b39df9a8697fcc6a05eb2c5f0417291a6ddbdf80a746f4a8197": {
+    "Signed Credential": {
+      "isString": true,
+      "content": "Certificate of TOGAF certification completion"
+    },
+    "Signed Credential 2": {
+      "isString": true,
+      "content": "[JsonBasedCredential(content\u003dCredentialContent(fields\u003d{\"issuerDid\":\"did:prism:29d0a4022e9b9b39df9a8697fcc6a05eb2c5f0417291a6ddbdf80a746f4a8197\",\"issuanceKeyId\":\"ID-1\",\"credentialSubject\":{\"name\":\"Debbol Mammo\",\"certificate\":\"Certificate of TOGAF certification completion\",\"issue-date\":\"NOV-20-2020\"}}), signature\u003dio.iohk.atala.prism.crypto.signature.ECSignature@38831718), JsonBasedCredential(content\u003dCredentialContent(fields\u003d{\"issuerDid\":\"did:prism:29d0a4022e9b9b39df9a8697fcc6a05eb2c5f0417291a6ddbdf80a746f4a8197\",\"issuanceKeyId\":\"ID-2\",\"credentialSubject\":{\"name\":\"Debbol Mammo\",\"certificate\":\"Certificate of PRISM certification completion\",\"issue-date\":\"NOV-20-2020\"}}), signature\u003dio.iohk.atala.prism.crypto.signature.ECSignature@2c1156a7)]"
+    }
+  }
+}

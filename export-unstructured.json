@@ -1,0 +1,16 @@
+[
+  {
+    "DID": "did:prism:29d0a4022e9b9b39df9a8697fcc6a05eb2c5f0417291a6ddbdf80a746f4a8197",
+    "Credentials": [
+      "Certificate of TOGAF certification completion",
+      "NOV-20-2020"
+    ]
+  },
+  {
+    "DID": "Tut #2",
+    "Credentials": [
+      "Certificate of PRISM certification completion",
+      "NOV-20-2021"
+    ]
+  }
+]

@@ -1,14 +1,8 @@
 [
+  JsonBasedCredential(content=CredentialContent(fields=
   {
-    "user_name": "Nathan Bogale",
-    "generated_did": "did:prism:a9671c9dd318a6da764dfcbbf1954a1861f705bacf7e0c7c82a9e24c3c623486",
-    "identity_credentials": [
-      {
-        "cred_title": "TOGAF CERT",
-        "Issuer_authority": "AAU",
-        "category": "Certification",
-        "Issued_date": "7-5-21"
-      }
-    ]
+    "Rsponse": "[Identity(user_name=Nathan Bogale, generated_did=did:prism:5ab9777acbf2e491bb5ee147fed6439ed5fa35bd0199354a3567c25d053e2a53, credentials=[Credential(cred_title=TOGAF CERT, Issuer_authority=AAU, category=Certification, Issued_date=7-5-21)])]"
   }
+  ),
+  signature=io.iohk.atala.prism.crypto.signature.ECSignature@5ecba515)
 ]

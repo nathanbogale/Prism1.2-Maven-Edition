@@ -21,6 +21,7 @@ repositories {
     jcenter()
     maven("https://plugins.gradle.org/m2/")
     maven("https://vlad107.jfrog.io/artifactory/default-maven-virtual/")
+    maven("https://jitpack.io")
     maven {
         url = uri("https://maven.pkg.github.com/input-output-hk/atala-prism-sdk")
         credentials {
@@ -56,6 +57,9 @@ dependencies {
 // needed for dealing with dates, bring the latest version
     implementation("org.jetbrains.kotlinx:kotlinx-datetime:0.2.1")
 
+    implementation("org.json:json:20210307")
+    implementation("com.fasterxml.jackson.module:jackson-module-kotlin:2.13.0")
+    implementation("junit:junit:4.13.2")
 }
 
 tasks.test {

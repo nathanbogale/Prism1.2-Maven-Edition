@@ -60,6 +60,9 @@ dependencies {
     implementation("org.json:json:20210307")
     implementation("com.fasterxml.jackson.module:jackson-module-kotlin:2.13.0")
     implementation("junit:junit:4.13.2")
+
+    implementation("com.squareup.moshi:moshi:1.12.0")
+
 }
 
 tasks.test {

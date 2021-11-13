@@ -12,16 +12,8 @@ import io.iohk.atala.prism.identity.PrismDid
 import kotlinx.serialization.json.Json
 import kotlinx.serialization.json.JsonObject
 import kotlinx.serialization.json.encodeToJsonElement
-import kotlinx.serialization.json.jsonArray
-import org.json.JSONObject
 import java.io.File
 import java.io.InputStream
-import com.squareup.moshi.JsonAdapter
-import com.squareup.moshi.JsonReader
-import com.squareup.moshi.JsonWriter
-import com.squareup.moshi.Moshi
-import java.io.IOException
-import java.lang.reflect.Type
 
 object PrismRunner2 {
 
@@ -77,18 +69,24 @@ object PrismRunner2 {
         val serialized = Gson().toJson("$ActualCredentialContent")
 
         val CredentialContent = JsonBasedCredential(ActualCredentialContent)
-        val signedCredential = listOf(CredentialContent.sign(masterKeyPair.privateKey))
+        val signedCredential = CredentialContent.sign(masterKeyPair.privateKey)
+        val signedCredentialList = listOf(signedCredential)
+
+        val sample3 = signedCredential.isValidSignature(masterKeyPair.publicKey)
+
+       // val sample2 = CredentialContent.isVerifiable(signedCredential)
         println("""--------------------------------------------------------""")
 
-        val (merkleRoot, merkleProofs) = CredentialBatches.batch(signedCredential)
+      //  val (merkleRoot, merkleProofs) = CredentialBatches.batch(signedCredentialList)
 
 
-        File("result.json").writeText("$signedCredential")
-        println("""- Here Are signedCredential:. $signedCredential""")
+        File("result.json").writeText("$signedCredentialList")
+        println("""- Here Are signedCredential:. $signedCredentialList""")
         println("""-------------------------------------------------------""")
 
-        println("""- merkleRoot:. $merkleRoot""")
+        //println("""- merkleRoot:. $merkleRoot""")
         println("""--------------------------- COMPLETED SUCCESSFULLY ----------------------------""")
+        println("""--------------------------- $sample3 ----------------------------""")
 
     }
 

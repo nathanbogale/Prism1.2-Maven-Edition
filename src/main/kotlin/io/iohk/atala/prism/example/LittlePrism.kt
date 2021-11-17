@@ -27,26 +27,47 @@ object LittlePrism {
         println("""- DID:. $did""")
 
 
-        val credentialContent = CredentialContent(
+        val firstCredentialContent = CredentialContent(
             JsonObject(
                 mapOf(
                     Pair("issuerDid", JsonPrimitive(did.value)),
-                    Pair("issuanceKeyId", JsonPrimitive("IDIssuance-0.0")),
+                    Pair("issuanceKeyId", JsonPrimitive("ID-1")),
                     Pair("credentialSubject", JsonObject(
                         mapOf(
                             Pair("name", JsonPrimitive("Debbol Mammo")),
-                            Pair("certificate", JsonPrimitive("Certificate of TOGAF certification completion"))
+                            Pair("certificate", JsonPrimitive("Certificate of TOGAF certification completion")),
+                            Pair("issue-date", JsonPrimitive("NOV-20-2020"))
                         )
                     )),
                 )
             )
         )
 
-        val credential = JsonBasedCredential(credentialContent)
-        val signedCredential = credential.sign(masterKeyPair.privateKey)
-        val (merkleRoot, merkleProofs) = CredentialBatches.batch(listOf(signedCredential))
-        println("""- Credential:. $credential""")
+        val secondCredentialContent = CredentialContent(
+            JsonObject(
+                mapOf(
+                    Pair("issuerDid", JsonPrimitive(did.value)),
+                    Pair("issuanceKeyId", JsonPrimitive("ID-2")),
+                    Pair("credentialSubject", JsonObject(
+                        mapOf(
+                            Pair("name", JsonPrimitive("Debbol Mammo")),
+                            Pair("certificate", JsonPrimitive("Certificate of PRISM certification completion")),
+                            Pair("issue-date", JsonPrimitive("NOV-20-2020"))
+
+                        )
+                    )),
+                )
+            )
+        )
+
+        val firstCredential = JsonBasedCredential(firstCredentialContent)
+        val secondCredential = JsonBasedCredential(secondCredentialContent)
+        val signedCredential = listOf(firstCredential.sign(masterKeyPair.privateKey),secondCredential.sign(masterKeyPair.privateKey))
+       // val signedCredential = firstCredential.sign(masterKeyPair.privateKey);secondCredential.sign(masterKeyPair.privateKey)
+        val (merkleRoot, merkleProofs) = CredentialBatches.batch(signedCredential)
+       // println("""- Credential:. $credential""")
         println("""- SignedCredential:. $signedCredential""")
+        println("""- Merkel Root+Proof:. $merkleRoot,$merkleProofs""")
 
 
     }

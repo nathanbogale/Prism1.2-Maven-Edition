@@ -9,7 +9,6 @@ Previously tried here, https://github.com/nathanbogale/Prism1.2TestRun.git (a gr
 
 # Resolutions
 
-
 #### Changed the project to support Maven 
 - And added the dependecies to be fetched to my project POM file like below
 
